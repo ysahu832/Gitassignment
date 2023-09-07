@@ -1,0 +1,28 @@
+$ git init
+$ git add feature1.txt
+$ git add feature.txt
+$ git commit -m "feature1 and feature"
+[master (root-commit) 42d2f17] feature1 and feature
+ 2 files changed, 0 insertions(+), 0 deletions(-)
+ create mode 100644 feature.txt
+ create mode 100644 feature1.txt
+$ git branch develop
+$ git branch feature1
+$ git branch feature2
+$ git checkout  feature1
+Switched to branch 'feature1'
+$ touch new.txt
+$ git add ne.txt
+$ git add new.txt
+$ git commit -m "add new.txt in feature1 branch"
+[feature1 7068131] add new.txt in feature1 branch
+ 1 file changed, 0 insertions(+), 0 deletions(-)
+ create mode 100644 new.txt
+$ git checkout develop
+Switched to branch 'develop'
+$ touch demo.txt
+$ git add demo.txt
+$ git commit -m "add demo.txt in develope branch"
+[develop 3dc550f] add demo.txt in develope branch
+ 1 file changed, 0 insertions(+), 0 deletions(-)
+ create mode 100644 demo.txt
